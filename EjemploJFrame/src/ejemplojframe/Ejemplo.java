@@ -200,14 +200,14 @@ public class Ejemplo extends javax.swing.JFrame {
     }//GEN-LAST:event_rbCiclo02ActionPerformed
 
     private void btRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRegistrarActionPerformed
-            // TODO add your handling code here
+           
         String cicloActual = "";
         String carrera = "";
         String camposDeTexto = "";
         
         String carreraSeleccionada = (String) this.cbCarrera.getSelectedItem();
         
-         // Validación de campos vacíos
+       
         if (this.tfNombres.getText().isEmpty() || this.tfNombres.getText().isEmpty()
             || this.tfCorreo.getText().isEmpty()) {
             camposDeTexto = "-1";
@@ -215,7 +215,7 @@ public class Ejemplo extends javax.swing.JFrame {
             return; // Sale del método si algún campo está vacío
         }
         
-        //Validacion opcion por defecto
+        
         if("Seleccione una opción".equals(carreraSeleccionada)){
             carrera = "-1";
             JOptionPane.showMessageDialog(this,"Seleccione una carrera.","Error",JOptionPane.ERROR_MESSAGE);
