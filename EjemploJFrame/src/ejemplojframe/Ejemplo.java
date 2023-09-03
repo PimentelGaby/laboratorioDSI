@@ -212,7 +212,7 @@ public class Ejemplo extends javax.swing.JFrame {
             || this.tfCorreo.getText().isEmpty()) {
             camposDeTexto = "-1";
             JOptionPane.showMessageDialog(this, "Por favor complete todos los campos.", "Error", JOptionPane.ERROR_MESSAGE);
-            return; // Sale del método si algún campo está vacío
+            return; 
         }
         
         
@@ -221,7 +221,7 @@ public class Ejemplo extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,"Seleccione una carrera.","Error",JOptionPane.ERROR_MESSAGE);
         }
         
-        //Validación del ciclo
+     
         if(this.rbCiclo01.isSelected()){
             cicloActual = "01";
         }else if(this.rbCiclo02.isSelected()){
@@ -229,7 +229,7 @@ public class Ejemplo extends javax.swing.JFrame {
         }else{
             cicloActual = "-1";
             JOptionPane.showMessageDialog(this,"Seleccione un ciclo.","Error",JOptionPane.ERROR_MESSAGE);
-            //"Error", JOptionPane.ERROR_MESSAGE);
+            
         }
         
         
